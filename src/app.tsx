@@ -3,6 +3,7 @@ import {Heading} from "./libs/Heading";
 import {AlertButton, Button} from "./libs/Button";
 import {TextArea} from "./libs/TextArea";
 import {Input} from "./libs/Input";
+import {PasswordForm} from "./libs/PasswordForm";
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
       <AlertButton title="Button4" onClick={() => console.error('clicked!')} />
       <TextArea width={500} maxLength={10}/>
       <Input type="text"/>
+      <PasswordForm onSubmit={(password) => {console.log(password)}} />
     </>
   )
 }
